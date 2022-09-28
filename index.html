@@ -13,16 +13,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = "container">
+    <!-- imports js file -->
+    <script type="text/javascript" src="C:\Users\finnl_y\source\repos\Nebula-Study\nebula-study.js"></script> 
+
+    <div class="split left" id="leftWindow">
         <h1>NEBULA STUDY</h1>
-        <h3>POMODORO TIMER</h3>
-        <h3>CHECKLIST</h3>
+        <h3 onclick="showRight()">POMODORO TIMER</h3>
+        <h3 >CHECKLIST</h3>
+    </div>
+    
+    <div class="split right" id="rightWindow">
+        <div id="btns-pomodoro">
+            <button class = "btn short btn-pomo" id="startBtn" onclick="startPause()">START</button>
+            <button class = "btn short btn-pomo">CANCEL</button>
+            <button class = "btn medium btn-pomo">ADJUST WORK</button>
+            <button class = "btn medium btn-pomo">ADJUST BREAK</button>    
+        </div>
+           
     </div>
 
-    <button class = "btn btn-light">START</button>
-    <button class = "btn btn-light">STOP</button>
-    <button class = "btn btn-light">ADJUST WORK</button>
-    <button class = "btn btn-light">ADJUST BREAK</button>
+    
 
 
 

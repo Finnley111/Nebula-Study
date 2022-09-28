@@ -1,19 +1,122 @@
+/* sets the root to a size so rem unit can be adjusted */
 :root {
     font-size:16px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
 h1 {
     font-family: 'Oswald';
-    color: rgb(0, 0, 0);
-    font-size: 10rem;
+    color: rgb(43, 5, 43);
+    font-size: calc(1rem + 8vw);
     display: flex;
-    transition: 2000ms ease-in-out;
-    margin-top: 2rem;
+    transition: 500ms ease-in-out;
+    /* margin-top: 10rem; */
+    margin-top: 10vh;
+    margin-left: 3rem;
+    width:fit-content;
+    user-select:none;
+}
+
+/* h1:hover {
+    transform: scale(1.01);
+} */
+
+h3 {
+    font-family: 'Oswald';
+    color: rgb(43, 5, 43);
+    font-size: calc(1rem + 2vw);
+    display: flex;
+    transition: 350ms ease-in-out;
+    margin-left: 3rem;
+    width:fit-content;
+    user-select:none;
+}
+
+h3:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+.btn {
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/* gets rid of bootstrap glow after click */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-pomo {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(216, 84, 216);
+  font-family: 'Montserrat';
+  color: rgb(216, 84, 216);
+  border-radius: 0px;
+  border-style: solid;
+}
+
+.btn-pomo:hover {
+  background-color: rgb(216, 84, 216);
+  border-color: rgb(216, 84, 216);
+  color: rgb(43, 5, 43);
+}
+
+.short {
+  width: 5.5rem;
+}
+
+.medium {
+  width: 11rem;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: rgb(216, 84, 216);
+}
+
+/* Control the right side */
+.right {
+  width: 33%;
+  right: 0;
+  background-color: rgb(43, 5, 43);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* formating for the pomodoro btns */
+#btns-pomodoro {
+  margin-top: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
 }
