@@ -16,6 +16,19 @@ h1 {
     user-select:none;
 }
 
+h2 {
+  font-family: 'Oswald';
+  color: rgb(216, 84, 216);
+  font-size: calc(1rem + 8vw);
+  display: flex;
+  transition: 500ms ease-in-out;
+  /* margin-top: 10rem; */
+  margin-top: 10vh;
+  margin-left: 3rem;
+  width:fit-content;
+  user-select:none;
+}
+
 /* h1:hover {
     transform: scale(1.01);
 } */
@@ -113,10 +126,18 @@ h3:hover {
 
 /* formating for the pomodoro btns */
 #btns-pomodoro {
-  margin-top: 50vh;
+  margin-top: 10vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   
+}
+
+#timerDiv {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
